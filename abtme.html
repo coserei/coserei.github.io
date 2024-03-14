@@ -3,7 +3,20 @@
 <html>
     <head>
         <title>Viva la vida</title>
-        <link rel="stylesheet" href="main.light.css">
+        <link rel="stylesheet" href="style/main.dark.css" id="theme">
+        <script>
+            function darkMode() {
+                const theme = document.querySelector("#theme");
+                const dark = document.getElementById("dark")
+                if(theme.getAttribute("href") == "style/main.dark.css") { 
+                    theme.href = "style/main.light.css"
+                    dark.innerHTML = "DARK MODE"
+                } else {
+                    theme.href = "style/main.dark.css"
+                    dark.innerHTML = "LIGHT MODE"
+                }
+            }
+        </script>
     </head>
     <body>
         <nav>
@@ -18,5 +31,6 @@
             I'm Indy Tallen, a hobby photographer based in Haarlem. My gear consists of nothing fancy, but more than enough to shoot some nice pictures; a Canon EOS 350D paired with a Tamron 28-105mm f/4-5.6 lens.
         </p>
         <img src="img/ik.jpg" class="ik">
+        <button class="dark" onclick="darkMode()"><p id="dark" class="darktext">LIGHT MODE</p></button>
     </body>
 </html>
