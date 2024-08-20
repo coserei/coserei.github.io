@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>THREALLOWEEN24</title>
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript">
+            const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+            window.onload = async () => {
+                const text = ['@', 't', 'h', 'r', 'e', 'a', 'l', 'l', 'o', 'w', 'e', 'e', 'n', '2', '4'];
+                for(let i = 0; text.length > i; i++) {
+                    document.getElementById("nav-title").innerHTML += text[i];
+                    await sleep(230)
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header-section">
+            <nav>
+                <h1 id="nav-title" onload="typewriter()"></h1>
+                <div id="option-list">
+                    <a href="contact.html">contact</a>
+                    <a href="tickets.html">tickets</a>
+                    <a href="index.html">about</a>
+                </div>
+            </nav>
+        </div>
+        <div id="maincontent-section">
+            <h2>Wat is threalloween?</h2>
+            <p>
+                Threalloween (samentrekking van Halloween en Threads) is een Halloween thema feest waarbij iedereen welkom is, niet alleen threadsfluencers! 
+                Op Threalloween zelf zijn er activiteiten, zoals een kostuumwedstrijd, muziek, geregeld door onze lieftallige DJ en threader Misha (@coocla33) en een bar. Alle ingredienten voor een gezellige avond ;). <br><br>
+                Threalloween vindt zich plaats in $locatie$ op de avond van de engste dag van het jaar, 31 oktober, maar maak je geen zorgen, de threaders bijten niet! (hoop ik)<br><br>
+                We hebben helaas (nog) geen sponsoren en daarom kosten onze tickets geld, maar stress niet, super duur zijn we ook niet. Earlybird tickets gaan eruit voor $earlybirdprijs$ en normale tickets kosten $normaleticketprijs$.<br><br>
+                Heb je na dit gelezen te hebben toch wel het gevoel dat threalloween best leuk klinkt? (al is het een excuus om tappie te gaan)<br>
+                Dan kan je meteen door naar de <a href="tickets.html">ticketpagina</a> om een ticket aan te schaffen.<br><br>
+                Wil je nog wat meer weten? Twijfel niet om ons te threaden op @threalloween of te emailen op het mailadres info@threalloween.nl.<br><br>
+                -Indy (threalloween organisator)
+            </p>
+        </div>
+        <div id="footer-section">
+            <footer>
+                <p>© Threalloween Copyright 2024</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>THREALLOWEEN24</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://shop.eventix.io/build/integrate.js"></script>
+        <script type="text/javascript">
+            const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+            window.onload = async () => {
+                const text = ['@', 't', 'h', 'r', 'e', 'a', 'l', 'l', 'o', 'w', 'e', 'e', 'n', '2', '4'];
+                for(let i = 0; text.length > i; i++) {
+                    document.getElementById("nav-title").innerHTML += text[i];
+                    await sleep(230)
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header-section">
+            <nav>
+                <h1 id="nav-title" onload="typewriter()"></h1>
+                <div id="option-list">
+                    <a href="contact.html">contact</a>
+                    <a href="tickets.html">tickets</a>
+                    <a href="index.html">about</a>
+                </div>
+            </nav>
+        </div>
+        <div id="maincontent-section" style="text-align: center;">
+            <span><h2>ticketverkoop begint op 31 augustus</h2></span>
+            <div id="shop-frame" data-url="https://shop.eventix.io/246bfe69-5ebe-11ef-a9cb-7e126431635e" style="max-width: 1000px; margin:0 auto;"></div>
+        </div>
+        <div id="footer-section">
+            <footer>
+                <p>© Threalloween Copyright 2024</p>
+            </footer>
+        </div>
+    </body>
+</html>

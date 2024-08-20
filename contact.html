@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>THREALLOWEEN24</title>
+        <link rel="stylesheet" href="main.css">
+        <script type="text/javascript">
+            const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+            window.onload = async () => {
+                const text = ['@', 't', 'h', 'r', 'e', 'a', 'l', 'l', 'o', 'w', 'e', 'e', 'n', '2', '4'];
+                for(let i = 0; text.length > i; i++) {
+                    document.getElementById("nav-title").innerHTML += text[i];
+                    await sleep(230)
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header-section">
+            <nav>
+                <h1 id="nav-title" onload="typewriter()"></h1>
+                <div id="option-list">
+                    <a href="contact.html">contact</a>
+                    <a href="tickets.html">tickets</a>
+                    <a href="index.html">about</a>
+                </div>
+            </nav>
+        </div>
+        <div id="maincontent-section">
+            <h2>Contact</h2>
+            <p>
+                Threalloween zoekt nog sponsors en personeel, als dat je leuk lijkt kun je contact met ons opnemen via onze onderstaande socials!<br><br>
+                info@threalloween.nl<br>
+                @threalloween (threads)<br><br>
+                of neem contact op met mij persoonlijk:<br>@indy.n_t<br>indynt@gmail.com
+            </p>
+        </div>
+        <div id="footer-section">
+            <footer>
+                <p>© Threalloween Copyright 2024</p>
+            </footer>
+        </div>
+    </body>
+</html>
